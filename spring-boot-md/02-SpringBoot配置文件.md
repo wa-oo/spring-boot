@@ -38,8 +38,8 @@ k:(空格) v : 表示一对键值对（空格必须有）；
 
 ```yaml
 server:
-		    port: 8081
-		    path: /hello
+		  port: 8081
+		  path: /hello
 ```
 
 属性和值大小写敏感；
