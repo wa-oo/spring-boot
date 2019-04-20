@@ -82,9 +82,9 @@ friends: {lastName: allen, age: 20}
 
 ```yaml
 pets:
-	- cat
-	- dog
-	- pig
+    - cat
+    - dog
+    - pig
 ```
 
 ​		行内写法
