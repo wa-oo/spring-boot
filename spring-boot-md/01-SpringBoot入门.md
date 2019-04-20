@@ -50,25 +50,16 @@
 
 ```xml 
 <parent> 
-
-<groupId>org.springframework.boot</groupId> 
-
-<artifactId>spring-boot-starter-parent</artifactId> 
-
-<version>2.1.3.RELEASE</version> 
-
+			  <groupId>org.springframework.boot</groupId> 
+  <artifactId>spring-boot-starter-parent</artifactId> 
+  <version>2.1.3.RELEASE</version> 
 </parent> 
 
 <dependencies> 
-
-<dependency> 
-
-<groupId>org.springframework.boot</groupId> 
-
-<artifactId>spring-boot-starter-web</artifactId> 
-
-</dependency> 
-
+  <dependency> 
+    <groupId>org.springframework.boot</groupId> 
+    <artifactId>spring-boot-starter-web</artifactId> 
+  </dependency> 
 </dependencies> 
 ```
 
@@ -76,23 +67,14 @@
 
 ```java 
 /** 
-
  * @SpringBootApplication 来标注一个主程序类，说明这是一个Spring Boot应用 
-
-*/ 
-
+ */ 
 @SpringBootApplication 
-
 public class HelloWorldMainApplication { 
-
 public static void main(String[] args) { 
-
-// Spring应用启动起来 
-
-SpringApplication.run(HelloWorldMainApplication.class, args); 
-
-} 
-
+				  // Spring应用启动起来 
+  SpringApplication.run(HelloWorldMainApplication.class, args); 
+  } 
 } 
 ```
 
@@ -100,19 +82,12 @@ SpringApplication.run(HelloWorldMainApplication.class, args);
 
 ```java 
 @Controller 
-
 public class HelloController { 
-
     @ResponseBody 
-
     @RequestMapping("/hello") 
-
     public String hello(){ 
-
     return "Hello World!"; 
-
     } 
-
 } 
 ```
 
@@ -120,21 +95,13 @@ public class HelloController {
 
 ```xml 
 <!--这个插件可以将应用打包成一个可执行的jar包--> 
-
 <build> 
-
-<plugins> 
-
-<plugin> 
-
-<groupId>org.springframework.boot</groupId> 
-
-<artifactId>spring-boot-maven-plugin</artifactId> 
-
-</plugin> 
-
-</plugins> 
-
+  <plugins> 
+    <plugin> 
+      <groupId>org.springframework.boot</groupId> 
+      <artifactId>spring-boot-maven-plugin</artifactId> 
+    </plugin> 
+  </plugins> 
 </build> 
 ```
 
@@ -148,29 +115,17 @@ public class HelloController {
 
 ```xml 
 <parent> 
-
-<groupId>org.springframework.boot</groupId> 
-
-<artifactId>spring-boot-starter-parent</artifactId> 
-
-<version>2.1.3.RELEASE</version> 
-
+  <groupId>org.springframework.boot</groupId> 
+  <artifactId>spring-boot-starter-parent</artifactId> 
+  <version>2.1.3.RELEASE</version> 
 </parent> 
-
 他的父项目 
-
 <parent> 
-
-<groupId>org.springframework.boot</groupId> 
-
-<artifactId>spring-boot-dependencies</artifactId> 
-
-<version>2.1.3.RELEASE</version> 
-
-<relativePath>../../spring-boot-dependencies</relativePath> 
-
+  <groupId>org.springframework.boot</groupId> 
+  <artifactId>spring-boot-dependencies</artifactId> 
+  <version>2.1.3.RELEASE</version> 
+  <relativePath>../../spring-boot-dependencies</relativePath> 
 </parent> 
-
 他来管理Spring Boot应用里的所有依赖版本
 ```
 
@@ -182,11 +137,8 @@ Spring Boot版本仲裁中心。
 
 ```xml 
 <dependency> 
-
-<groupId>org.springframework.boot</groupId> 
-
-<artifactId>spring-boot-starter-web</artifactId> 
-
+  <groupId>org.springframework.boot</groupId> 
+  <artifactId>spring-boot-starter-web</artifactId> 
 </dependency> 
 ```
 
@@ -198,23 +150,14 @@ Spring Boot将所有的功能场景都抽取出来，做成一个个都starters�
 
 ```java 
 /** 
-
  * @SpringBootApplication 来标注一个主程序类，说明这是一个Spring Boot应用 
-
  */ 
-
 @SpringBootApplication 
-
 public class HelloWorldMainApplication { 
-
     public static void main(String[] args) { 
-
         // Spring应用启动起来 
-
         SpringApplication.run(HelloWorldMainApplication.class, args); 
-
     } 
-
 } 
 ```
 
@@ -222,39 +165,30 @@ public class HelloWorldMainApplication {
 
 ```java 
 @Target(ElementType.TYPE) 
-
 @Retention(RetentionPolicy.RUNTIME) 
-
 @Documented 
-
 @Inherited 
-
 @SpringBootConfiguration 
-
 @EnableAutoConfiguration 
-
 @ComponentScan(excludeFilters = { 
-
 @Filter(type = FilterType.CUSTOM, classes = TypeExcludeFilter.class), 
-
 @Filter(type = FilterType.CUSTOM, classes = AutoConfigurationExcludeFilter.class) }) 
-
 public @interface SpringBootApplication {} 
 ```
 
-​		@**SpringBootConfiguration**：Spring Boot的配置类 
+@**SpringBootConfiguration**：Spring Boot的配置类 
 
-​				标注在某个类上，表示这是一个Spring Boot的配置类； 
+​	标注在某个类上，表示这是一个Spring Boot的配置类； 
 
-​				@**Configuration**：配置类上标注这个注解； 
+​	@**Configuration**：配置类上标注这个注解； 
 
-​								配置类---配置文件； 
+​		配置类---配置文件； 
 
-​								配置类也是容器中的一个组件；@Component 
+​		配置类也是容器中的一个组件；@Component 
 
-​		@**EnableAutoConfiguration**：开启自动配置功能 
+​	@**EnableAutoConfiguration**：开启自动配置功能 
 
-​				以前我们需要配置的东西，Spring Boot帮我们自动配置，@**EnableAutoConfiguration**告诉Spring Boot开启自动配置功能，这样自动配置才能生效。
+​		以前我们需要配置的东西，Spring Boot帮我们自动配置，@**EnableAutoConfiguration**告诉Spring Boot开启自动配置功能，这样自动配置才能生效。
 
 ```java
 @AutoConfigurationPackage
@@ -262,23 +196,23 @@ public @interface SpringBootApplication {}
 public @interface EnableAutoConfiguration {
 ```
 
-​			@**AutoConfigurationPackage**：自动配置包 
+@**AutoConfigurationPackage**：自动配置包 
 
-​					@Import(AutoConfigurationPackages.Registrar.class)：
+​	@Import(AutoConfigurationPackages.Registrar.class)：
 
-​					Spring的底层注解@Import，给容器中导入一个组件，导入的组件由AutoConfigurationPackages.Registrar.class决定。
+​	Spring的底层注解@Import，给容器中导入一个组件，导入的组件由AutoConfigurationPackages.Registrar.class决定。
 
 ==将主配置类（@SpringbootApplication标注的类）的所在包及下面所有子包里面的所有组件扫描到Spring容器中。==
 
-​			@**Import**(AutoConfigurationImportSelector.class)
+​	@**Import**(AutoConfigurationImportSelector.class)
 
-​					给容器导入组件
+​		给容器导入组件
 
-​					AutoConfigurationImportSelector.class：导入哪些组件的选择器；
+​		AutoConfigurationImportSelector.class：导入哪些组件的选择器；
 
-​					将所有需要导入的组件以全类名的方式返回，这些组件就会被添加到容器中。
+​		将所有需要导入的组件以全类名的方式返回，这些组件就会被添加到容器中。
 
-​					会给容器中导入非常多的自动配置类（xxxAutoConfiguration），就是给容器中导入这个场景需要的所有组件，并配置好这些组件。
+​		会给容器中导入非常多的自动配置类（xxxAutoConfiguration），就是给容器中导入这个场景需要的所有组件，并配置好这些组件。
 
 有了自动配置类，免去了我们手动编写配置注入功能组件等工作。
 

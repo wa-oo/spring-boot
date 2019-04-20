@@ -165,7 +165,7 @@ public class Person {
 
 ==如果只是在某个业务逻辑中获取一下配置文件中的某个值，使用@Value;==
 
-==如果专门编写了一个JavaBean来和配置文件进行映射，使用@ConfigurationProperties==；
+==如果专门编写了一个JavaBean来和配置文件进行映射，使用@ConfigurationProperties；==
 
 #### 3、配置文件注入值数据校验
 
