@@ -1,0 +1,49 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.allen.springboot.bean.Person",
+      "sourceType": "com.allen.springboot.bean.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.allen.springboot.bean.Person"
+    },
+    {
+      "name": "person.birthday",
+      "type": "java.util.Date",
+      "sourceType": "com.allen.springboot.bean.Person"
+    },
+    {
+      "name": "person.boss",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.allen.springboot.bean.Person",
+      "defaultValue": false
+    },
+    {
+      "name": "person.dog",
+      "type": "com.allen.springboot.bean.Dog",
+      "sourceType": "com.allen.springboot.bean.Person"
+    },
+    {
+      "name": "person.last-name",
+      "type": "java.lang.String",
+      "description": "<bean class=\"Person\">     <property name=\"lastName\" value=\"字面量\/${key}从环境变量或配置文件中获取值\/#{SpEL Spring表达式语言}\"><\/property> <\/bean>",
+      "sourceType": "com.allen.springboot.bean.Person"
+    },
+    {
+      "name": "person.lists",
+      "type": "java.util.List<java.lang.Object>",
+      "sourceType": "com.allen.springboot.bean.Person"
+    },
+    {
+      "name": "person.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.allen.springboot.bean.Person"
+    }
+  ],
+  "hints": []
+}

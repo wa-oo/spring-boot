@@ -1,0 +1,13 @@
+person:
+  last-name: allen
+  age: 20
+  boss: false
+  birthday: 2019/04/20
+  maps: {k1: v1,k2: v2,k3: v3}
+  lists:
+    - 1
+    - 2
+    - 3
+  dog:
+    name: 哈士奇
+    age: 3
