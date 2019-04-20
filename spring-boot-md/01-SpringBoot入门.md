@@ -49,8 +49,8 @@
 ### 2、导入Spring Boot相关的依赖 
 
 ```xml 
-<parent> 
-			  <groupId>org.springframework.boot</groupId> 
+<parent>
+  <groupId>org.springframework.boot</groupId> 
   <artifactId>spring-boot-starter-parent</artifactId> 
   <version>2.1.3.RELEASE</version> 
 </parent> 
