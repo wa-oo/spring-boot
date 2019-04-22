@@ -1,0 +1,11 @@
+2019-04-21 17:19:22.270  INFO 62421 --- [main] .a.s.SpringBoot03LoggingApplicationTests : Starting SpringBoot03LoggingApplicationTests on AllendeMacBook-Pro.local with PID 62421 (started by allen in /Users/allen/Documents/workSpace/spring-boot/spring-boot-03-logging)
+2019-04-21 17:19:22.272 DEBUG 62421 --- [main] .a.s.SpringBoot03LoggingApplicationTests : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-21 17:19:22.274  INFO 62421 --- [main] .a.s.SpringBoot03LoggingApplicationTests : No active profile set, falling back to default profiles: default
+2019-04-21 17:19:24.213  INFO 62421 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-21 17:19:24.548  INFO 62421 --- [main] .a.s.SpringBoot03LoggingApplicationTests : Started SpringBoot03LoggingApplicationTests in 2.914 seconds (JVM running for 3.869)
+2019-04-21 17:19:24.750 TRACE 62421 --- [main] .a.s.SpringBoot03LoggingApplicationTests : 这是trace日志。。。
+2019-04-21 17:19:24.751 DEBUG 62421 --- [main] .a.s.SpringBoot03LoggingApplicationTests : 这是debug日志。。。
+2019-04-21 17:19:24.752  INFO 62421 --- [main] .a.s.SpringBoot03LoggingApplicationTests : 这是info日志。。。
+2019-04-21 17:19:24.752  WARN 62421 --- [main] .a.s.SpringBoot03LoggingApplicationTests : 这是warn日志。。。
+2019-04-21 17:19:24.752 ERROR 62421 --- [main] .a.s.SpringBoot03LoggingApplicationTests : 这是error日志。。。
+2019-04-21 17:19:24.763  INFO 62421 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

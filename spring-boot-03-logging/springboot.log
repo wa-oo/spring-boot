@@ -1,0 +1,22 @@
+2019-04-21 17:13:50.914  INFO 62238 --- [main] c.a.s.SpringBoot03LoggingApplication     : Starting SpringBoot03LoggingApplication on AllendeMacBook-Pro.local with PID 62238 (/Users/allen/Documents/workSpace/spring-boot/spring-boot-03-logging/target/classes started by allen in /Users/allen/Documents/workSpace/spring-boot/spring-boot-03-logging)
+2019-04-21 17:13:50.918 DEBUG 62238 --- [main] c.a.s.SpringBoot03LoggingApplication     : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-21 17:13:50.919  INFO 62238 --- [main] c.a.s.SpringBoot03LoggingApplication     : No active profile set, falling back to default profiles: default
+2019-04-21 17:13:51.928  INFO 62238 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-21 17:13:51.950  INFO 62238 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-21 17:13:51.951  INFO 62238 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-21 17:13:52.031  INFO 62238 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-21 17:13:52.032  INFO 62238 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1058 ms
+2019-04-21 17:13:52.221  INFO 62238 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-21 17:13:52.393  INFO 62238 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-21 17:13:52.396  INFO 62238 --- [main] c.a.s.SpringBoot03LoggingApplication     : Started SpringBoot03LoggingApplication in 2.065 seconds (JVM running for 2.789)
+2019-04-21 17:14:16.080  INFO 62251 --- [main] .a.s.SpringBoot03LoggingApplicationTests : Starting SpringBoot03LoggingApplicationTests on AllendeMacBook-Pro.local with PID 62251 (started by allen in /Users/allen/Documents/workSpace/spring-boot/spring-boot-03-logging)
+2019-04-21 17:14:16.082 DEBUG 62251 --- [main] .a.s.SpringBoot03LoggingApplicationTests : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-21 17:14:16.082  INFO 62251 --- [main] .a.s.SpringBoot03LoggingApplicationTests : No active profile set, falling back to default profiles: default
+2019-04-21 17:14:17.637  INFO 62251 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-21 17:14:17.893  INFO 62251 --- [main] .a.s.SpringBoot03LoggingApplicationTests : Started SpringBoot03LoggingApplicationTests in 2.473 seconds (JVM running for 3.602)
+2019-04-21 17:14:18.102 TRACE 62251 --- [main] .a.s.SpringBoot03LoggingApplicationTests : 这是trace日志。。。
+2019-04-21 17:14:18.102 DEBUG 62251 --- [main] .a.s.SpringBoot03LoggingApplicationTests : 这是debug日志。。。
+2019-04-21 17:14:18.102  INFO 62251 --- [main] .a.s.SpringBoot03LoggingApplicationTests : 这是info日志。。。
+2019-04-21 17:14:18.102  WARN 62251 --- [main] .a.s.SpringBoot03LoggingApplicationTests : 这是warn日志。。。
+2019-04-21 17:14:18.102 ERROR 62251 --- [main] .a.s.SpringBoot03LoggingApplicationTests : 这是error日志。。。
+2019-04-21 17:14:18.109  INFO 62251 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

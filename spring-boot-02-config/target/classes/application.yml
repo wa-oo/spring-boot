@@ -1,16 +1,34 @@
 server:
   port: 8081
+spring:
+  profiles:
+    active: prod
+---
+server:
+  port: 8082
+spring:
+  profiles: dev
+---
+server:
+  port: 8083
+spring:
+  profiles: prod
+---
+#person:
+#  lastName: allen${random.uuid}
+#  age: ${random.int}
+#  boss: false
+#  birthday: 2019/04/20
+#  maps: {k1: v1,k2: v2,k3: v3}
+#  lists:
+#    - 1
+#    - 2
+#    - 3
+#  dog:
+#    name: ${person.hello:hello}-dog
+#    age: 3
+#
+#spring:
+#  profiles:
+#    active: dev
 
-person:
-  lastName: allen
-  age: 20
-  boss: false
-  birthday: 2019/04/20
-  maps: {k1: v1,k2: v2,k3: v3}
-  lists:
-    - 1
-    - 2
-    - 3
-  dog:
-    name: 哈士奇
-    age: 3
